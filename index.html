@@ -517,11 +517,11 @@
     @media (max-width: 768px) {
       body{padding:0}
       .chat-container{
-        width:100vw;height:100vh;border-radius:0;max-height:100vh;
-        border:none;border-left:1px solid rgba(255,255,255,0.1);
+        width:100vw;height:100vh;border-radius:0;max-height:100vh;border:none;
+        border-left:1px solid rgba(255,255,255,0.1);
         border-right:1px solid rgba(255,255,255,0.1);
       }
-      .chat-header{padding:20px 15px 15px 15px;padding-top:env(safe-area-inset-top,20px)}
+      .chat-header{padding:20px 15px 15px 15px;padding-top:max(20px, env(safe-area-inset-top))}
       .chat-header h1{font-size:24px}
       .chat-header p{font-size:14px}
       .chat-body{padding:15px;gap:12px}
@@ -533,7 +533,7 @@
       .welcome-section h3{font-size:16px;margin-bottom:8px}
       .welcome-section p{font-size:14px;line-height:1.5;margin-bottom:15px}
       .chat-input{
-        padding:15px;padding-bottom:calc(15px + env(safe-area-inset-bottom,0px));gap:10px;
+        padding:15px;padding-bottom:max(15px, calc(15px + env(safe-area-inset-bottom)));gap:10px;
       }
       .chat-input input{padding:14px 18px;font-size:16px;border-radius:25px}
       .chat-input button{
@@ -550,9 +550,9 @@
 
     @media (min-width: 769px) and (max-width: 1024px) {
       .chat-container{width:600px;height:750px}
-      .chat-header{padding:25px 20px}
-      .chat-body{padding:25px}
-      .chat-input{padding:25px}
+      .chat-header{padding:28px 24px}
+      .chat-body{padding:28px}
+      .chat-input{padding:24px}
     }
 
     @media (min-width: 1025px) {
