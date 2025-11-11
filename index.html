@@ -57,7 +57,7 @@
     }
 
     .chat-container{
-      width:480px;height:650px;
+      width:480px;
       background:linear-gradient(135deg,
         rgba(255,255,255,0.12) 0%,
         rgba(255,255,255,0.08) 50%,
@@ -603,11 +603,6 @@
       .bot-message,.user-message,.promotion-message{transition:all .3s ease}
     }
 
-    @supports (-webkit-touch-callout: none) {
-      .chat-container{height:100vh;height:-webkit-fill-available}
-      .chat-input input{font-size:16px;border-radius:25px}
-    }
-
     @media screen and (max-width: 768px) {
       .chat-input input:focus{transform:none}
     }
@@ -638,7 +633,7 @@
 
 <script type="module">
 // ===== AURA CHATBOT CONFIGURATION =====
-const CHATBOT_ID = "YOUR_CHATBOT_ID_HERE"; // You'll need to add this after creating in Supabase
+const CHATBOT_ID = "c5e4c04e-da33-4025-ab82-1b6d7affaf9c"; // You'll need to add this after creating in Supabase
 const BACKEND_URL = "https://hsrpibsdfzzzvfmfakqu.supabase.co/functions/v1/chatbot-proxy";
 
 // State variables
